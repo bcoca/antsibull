@@ -20,24 +20,24 @@ jobs:
 
     steps:
       - name: Check out antsibull
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: antsibull
 
       - name: Check out dependent project antsibull-changelog
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: ansible-community/antsibull-changelog
           path: antsibull-changelog
 
       - name: Check out dependent project antsibull-core
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: ansible-community/antsibull-core
           path: antsibull-core
 
       - name: Check out dependent project antsibull-docs
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: ansible-community/antsibull-docs
           path: antsibull-docs
@@ -56,7 +56,7 @@ jobs:
         working-directory: antsibull
 
       - name: Check out community.general's stable-4 branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: ansible-collections/community.general
           ref: stable-4
